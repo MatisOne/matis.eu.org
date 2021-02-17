@@ -1,0 +1,12 @@
+{
+  "short_name": "Matis",
+  "name": "Matis",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#FFFFFF",
+  "theme_color": "#990325"
+}
