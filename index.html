@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan&display=swap">
+  <link rel="stylesheet" href="dark.css">
   <style>strong{font-weight:bold;}</style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS6RFHRHQ2"></script>
@@ -46,6 +47,7 @@
           <li><a href="https://pay.matis.eu.org">Sklep</a></li>
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown-more">Więcej<i class="material-icons right" style="margin: 0">arrow_drop_down</i></a></li>
           <li><a href="https://matis.eu.org/kontakt">Kontakt</a></li>
+          <a class="btn dark-toggle" href="#" style="background-color: black;" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark Mode/Light Mode"><i class="material-icons">brightness_4</i></a>
         </ul>
       </div>
     </div>
@@ -57,6 +59,7 @@
     <li><a href="https://podcast.matis.eu.org">Podcast</a></li>
 	  <li><a href="https://matis.eu.org/status">Status</a></li>
     <li><a href="https://matis.eu.org/kontakt">Kontakt</a></li>
+    <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark Mode/Light Mode"><i class="material-icons left">brightness_4</i> Dark Mode</a></li>
   </ul>
   <ul id="dropdown-more" class="dropdown-content">
     <li><a href="https://tv.matis.eu.org">MatisTV</a></li>
@@ -309,6 +312,13 @@
 		for (var i = 0; i < dropdowns.length; i++){
 			M.Dropdown.init(dropdowns[i], options);
 		};
+    $('.dark-toggle').on('click',function(){
+      if ($(this).find('i').text() == 'brightness_4'){
+          $(this).find('i').text('brightness_high');
+      } else {
+          $(this).find('i').text('brightness_4');
+      }
+    });
 	});
   </script>
 
