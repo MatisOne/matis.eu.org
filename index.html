@@ -312,11 +312,11 @@
 		for (var i = 0; i < dropdowns.length; i++){
 			M.Dropdown.init(dropdowns[i], options);
 		};
-    $('.dark-toggle').on('click',function(){
-      if ($(this).find('i').text() == 'brightness_4'){
-          $(this).find('i').text('brightness_high');
+    document.querySelector('.dark-toggle').addEventListener('click',function(){
+      if (document.querySelector('.dark-toggle').querySelector('i').innerHTML == 'brightness_high'){
+          document.querySelector('.dark-toggle').querySelector('i').innerHTML = 'brightness_4';
       } else {
-          $(this).find('i').text('brightness_4');
+          document.querySelector('.dark-toggle').querySelector('i').innerHTML = 'brightness_high';
       }
     });
 	});
