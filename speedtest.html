@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <title>SpeedTest | Matis – Mateusz Sarna</title>
+  <meta name="description" content="MIEJSCE NA OPIS STRONY DO UZUPEŁNIENIA">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#990325">
+
+  <meta property="og:title" content="SpeedTest | Matis – Mateusz Sarna">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://matis.eu.org/speedtest">
+  <meta property="og:image" content="https://matis.eu.org/icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.2/iconfont/material-icons.min.css" integrity="sha512-y9glprRcVESvYY3suAqBUYXx0ySbQNvbzzgvLy9F2o38Y7XCNeq/No2gnHjV3+Rjyq5ijoPZRMXotpdw6jcG4g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan&display=swap">
+  <link rel="stylesheet" href="dark.css">
+  <style>strong{font-weight:bold;}</style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS6RFHRHQ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WS6RFHRHQ2');
+  </script>
+  <script data-ad-client="ca-pub-7232982354875487" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body style="font-family: 'Spartan', sans-serif; display: flex; min-height: 100vh; flex-direction: column;">
+  <nav>
+    <div class="nav-wrapper" style="background-color: #990325">
+      <div class="container">
+        <a href="https://matis.eu.org" class="brand-logo" style="font-weight:bold"><nobr><img src="img/logo-v1.png" alt="Logo Matis" height="48" style="vertical-align:-21%"> Matis.eu.org</nobr></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="https://matis.eu.org/about">O mnie</a></li>
+          <li><a href="https://pay.matis.eu.org">Sklep</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown-more">Więcej<i class="material-icons right" style="margin: 0">arrow_drop_down</i></a></li>
+          <li><a href="https://matis.eu.org/kontakt">Kontakt</a></li>
+		  <a class="btn dark-toggle" href="#" style="background-color: black;" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark Mode/Light Mode"><i class="material-icons">brightness_4</i></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="https://matis.eu.org/about">O mnie</a></li>
+	<li><a href="https://pay.matis.eu.org">Sklep</a></li>
+    <li><a href="https://tv.matis.eu.org">MatisTV</a></li>
+    <li><a href="https://podcast.matis.eu.org">Podcast</a></li>
+	<li><a href="https://matis.eu.org/status">Status</a></li>
+	<li><a href="https://matis.eu.org/speedtest">SpeedTest</a></li>
+    <li><a href="https://matis.eu.org/kontakt">Kontakt</a></li>
+	<li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark Mode/Light Mode"><i class="material-icons left">brightness_4</i> Dark Mode</a></li>
+  </ul>
+  <ul id="dropdown-more" class="dropdown-content">
+    <li><a href="https://tv.matis.eu.org">MatisTV</a></li>
+    <li><a href="https://podcast.matis.eu.org">Podcast</a></li>
+    <li><a href="https://matis.eu.org/status">Status Usług</a></li>
+	<li><a href="https://matis.eu.org/speedtest">SpeedTest</a></li>
+  </ul>
+
+  <main style="flex: 1 0 auto;">
+    <div class="container">
+      <div class="col s12">
+		<iframe width="100%" height="650px" frameborder="0" src="https://playts.speedtestcustom.com"></iframe>
+	  </div>
+    </div>
+  </main>
+
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l1 s4">
+          <h5 class="white-text"><a href="https://Matis.eu.org" class="white-text"><b>Matis</b></a></h5>
+          <ul>
+            <li><a class="grey-text text-lighten-2" href="https://matis.eu.org/about">» O mnie</a></li>
+            <li><a class="grey-text text-lighten-2" href="https://matis.eu.org/kontakt">» Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="col l1 s4">
+          <h5 class="white-text"><b>Inne</b></h5>
+          <ul>
+            <li><a class="grey-text text-lighten-2" href="https://pay.matis.eu.org">» Sklep</a></li>
+            <li><a class="grey-text text-lighten-2" href="https://tv.Matis.eu.org">» MatisTV</a></li>
+            <li><a class="grey-text text-lighten-2" href="https://podcast.matis.eu.org">» Podcast</a></li>
+          </ul>
+        </div>
+        <div class="col l2 s4">
+          <h5 class="white-text"><b>Projekty</b></h5>
+          <ul>
+            <li><a class="grey-text text-lighten-2" href="https://PlayTS.eu" target="_blank" rel="noopener">» PlayTS.eu</a></li>
+            <li><a class="grey-text text-lighten-2" href="https://Kwadratowa.tk" target="_blank" rel="noopener">» Kwadratowa.tk</a></li>
+            <li><a class="grey-text text-lighten-2" href="https://AxoNet.eu" target="_blank" rel="noopener">» AxoNet.eu</a></li>
+          </ul>
+        </div>
+        <div class="col l2 s5">
+          <h5 class="white-text"><b>Dokumenty</b></h5>
+          <ul>
+			<li><a class="grey-text text-lighten-2" href="https://pay.Matis.eu.org/polityka-prywatnosci.pdf" target="_blank" rel="noopener">» Polityka Prywatności</a></li>
+			<li><a class="grey-text text-lighten-2" href="https://pay.Matis.eu.org/regulamin.pdf" target="_blank" rel="noopener">» Regulamin Sklepu</a></li>
+          </ul>
+         </div>
+        <div class="col l3 offset-l3 s6">
+          <h5 class="white-text tooltipped" data-position="top" data-tooltip="⚠️ tekst poniżej jest klikalny 😉"><b>Skontaktuj się ze mną</b></h5>
+          <a href="https://matis.eu.org/kontakt" target="_blank" rel="noopener" class="grey-text text-lighten-2">Mateusz Sarna</a>
+          <br>
+          Działalność nierejestrowa
+          <br>
+          <a href="tel:+48124447479" class="grey-text text-lighten-2"><i class="material-icons tiny">phone</i> +48 12 444-74-79</a>
+          <br>
+          <a href="mailto:Matis@t.pl" target="_blank" rel="noopener" class="grey-text text-lighten-2"><i class="material-icons tiny">email</i> Matis@t.pl</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright z-depth-1">
+      <div class="container">
+        <div class="left" style="margin-top:7px">© <script>document.write(new Date().getFullYear())</script> Copyright Mateusz Sarna</div>
+        &nbsp;<a style="vertical-align:-30%" href="https://linkedin.com/in/Mateusz-Sarna" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a style="vertical-align:-30%" href="https://github.com/MatisOne" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <div class="right">
+          <a class="btn-floating btn-small waves-effect waves-light" style="background-color:#9146FF" href="https://twitch.tv/Matis5" target="_blank" rel="noopener"><i class="fab fa-twitch"></i></a>
+          <a class="btn-floating btn-small waves-effect waves-light" style="background-color:#FF0000" href="https://youtube.com/MatisAgain" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+          <a class="btn-floating btn-small waves-effect waves-light" style="background-color:#1877F2" href="https://fb.com/MatisOne" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+          <a class="btn-floating btn-small waves-effect waves-light" style="background-color:#1DA1F2" href="https://twitter.com/Matis253" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a class="btn-floating btn-small waves-effect waves-light" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);" href="https://instagram.com/Matis253" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous"></script>
+  <script>
+	document.addEventListener('DOMContentLoaded', function() {
+		M.AutoInit();
+    var options = {constrainWidth: false, coverTrigger: false, hover: true};
+		var dropdowns = document.querySelectorAll('.dropdown-trigger');
+		for (var i = 0; i < dropdowns.length; i++){
+			M.Dropdown.init(dropdowns[i], options);
+		};
+	document.querySelector('.dark-toggle').addEventListener('click',function(){
+      if (document.querySelector('.dark-toggle').querySelector('i').innerHTML == 'brightness_high'){
+          document.querySelector('.dark-toggle').querySelector('i').innerHTML = 'brightness_4';
+      } else {
+          document.querySelector('.dark-toggle').querySelector('i').innerHTML = 'brightness_high';
+      }
+    });
+	});
+  </script>
+
+  <!-- Cookie Banner -->
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js" integrity="sha512-ZYGEOS7yOZQcU0PR3emmWbLNGlPJK2d7k7PxHLu8yM8saGbZpBiI0ujjh2EWZSx6Ujw0o8+Xe5WAca0DsCgCvg==" crossorigin="anonymous" id="cookiebanner" data-message="Używam plików cookie, aby poprawić Twoje wrażenia. Kontynuując odwiedzanie tej witryny, zgadzasz się na używanie plików cookie." data-linkmsg="Dowiedz się więcej" data-moreinfo="https://wszystkoociasteczkach.pl" data-close-style="float:left;padding-right:5px;"></script>
+
+  <!-- Formspree.io -->
+  <script defer src="https://formspree.io/js/formbutton-v1.min.js"></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/f/xleopvay",
+	title: "👋 Porozmawiajmy"})
+  </script>
+</body>
+
+</html>
