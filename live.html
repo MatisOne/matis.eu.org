@@ -39,17 +39,15 @@
 <body style="font-family: 'Spartan', sans-serif; display: flex; min-height: 100vh; flex-direction: column;">
   <nav>
     <div class="nav-wrapper" style="background-color: #990325">
-      <div class="container">
-        <a href="https://matis.eu.org" class="brand-logo" style="font-weight:bold"><nobr><img src="img/logo-v1.png" alt="Logo Matis" height="48" style="vertical-align:-21%"> Matis.eu.org</nobr></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="https://matis.eu.org/about">O mnie</a></li>
-          <li><a href="https://pay.matis.eu.org">Sklep</a></li>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown-more">Więcej<i class="material-icons right" style="margin: 0">arrow_drop_down</i></a></li>
-          <li><a href="https://matis.eu.org/kontakt">Kontakt</a></li>
-		  <a class="btn dark-toggle" href="#" style="background-color: black;" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark Mode/Light Mode"><i class="material-icons">brightness_4</i></a>
-        </ul>
-      </div>
+      <a href="https://matis.eu.org" class="brand-logo" style="font-weight:bold"><nobr>&nbsp;<i class="fab fa-twitch" style="float:none"></i>Matis.eu.org</nobr></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://matis.eu.org/about">O mnie</a></li>
+        <li><a href="https://pay.matis.eu.org">Sklep</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown-more">Więcej<i class="material-icons right" style="margin: 0">arrow_drop_down</i></a></li>
+        <li><a href="https://matis.eu.org/kontakt">Kontakt</a></li>
+    <a class="btn dark-toggle" href="#" style="background-color: black;" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark Mode/Light Mode"><i class="material-icons">brightness_4</i></a>
+      </ul>
     </div>
   </nav>
   <ul class="sidenav" id="mobile-demo">
@@ -75,7 +73,8 @@
 
   <main style="flex: 1 0 auto;">
     <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed" style="height: 90vh;"></div>
+    <div id="twitch-embed" style="height: 80vh;"></div>
+    <img class="circle responsive-img" alt="Matis5" src="https://static-cdn.jtvnw.net/jtv_user_pictures/afdb7f84-155c-44da-afde-8397e411fc4b-profile_image-70x70.png">Matis5
   </main>
 
   <!-- Load the Twitch embed JavaScript file -->
