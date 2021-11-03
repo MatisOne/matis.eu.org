@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WHITELIST</title>
+    <style>
+        /* Background styles */
+        body {
+            background-color: #111927;
+            background-image: 
+                radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+                radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+            color: #FFFF;
+            height: 100vh;
+        }
+
+        /* Glassmorphism card effect */
+        .card {
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(17, 25, 40, 0.75);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+
+        .btn-primary{
+            background-color: #2ea44f;
+            background-image: var(--bs-gradient);
+            border-color: #2ea44f;
+            box-shadow: 0 1px 1px rgb(18 21 26 / 8%);
+        }
+        .btn-primary:hover {
+            background-color: #289045;
+            border-color: #289045;
+        }
+
+        .form-control {
+            background-color: #1f2a37;
+            border: 1px solid #4b5663;
+            color: #fff;
+        }
+
+        .form-control:focus {
+            background-color: #374251;
+            border-color: #2ea44f;
+            color: #fff;
+        }
+		
+        .text-muted {
+            color: #9ca3af !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-4" style="margin-top: 50px;">
+                <div class="card p-lg-3">
+                    <div class="card-header bg-transparent border-0 pb-0 mb-3">
+                        <h2 class="h4">Zaloguj się do gry</h2><span class="text-muted">Zaloguj się na serwer podając swój nick w grze</span>
+                    </div>
+                    <div class="card-body">
+                        <form action="http://mc.matis.eu.org/api/add">
+                            <div class="mb-4"><!-- <label class="mb-2">Twój Nick</label> -->
+                                <input type="nick" class="form-control" placeholder="Zbysiu12" required autofocus>
+                            </div>
+                            <div class="d-grid"><button type="submit" class="btn btn-primary">Zaloguj się</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js" integrity="sha512-ewfXo9Gq53e1q1+WDTjaHAGZ8UvCWq0eXONhwDuIoaH8xz2r96uoAYaQCm1oQhnBfRXrvJztNXFsTloJfgbL5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
